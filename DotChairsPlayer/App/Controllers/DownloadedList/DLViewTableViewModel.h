@@ -14,4 +14,6 @@
 - (NSURL *)filePathURLAtIndexPath:(NSIndexPath *) path;
 
 - (void)deleteFileAtIndexPath:(NSIndexPath *) path;
+
+- (void)openWithVLCAtIndexPath:(NSIndexPath *) path;
 @end

@@ -14,7 +14,5 @@
 
 + (NSString *)universalFile:(NSString *) fileName;
 
-+ (UIImage *)imageNamed:(NSString *) fileName;
-
 + (BOOL)isJapanese;
 @end

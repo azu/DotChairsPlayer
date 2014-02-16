@@ -10,6 +10,7 @@
 
 @interface DLListViewTableViewController ()
 @property(nonatomic, strong) DLViewTableViewModel *model;
+@property(nonatomic, strong) UIDocumentInteractionController *interactionController;
 @end
 
 @implementation DLListViewTableViewController
@@ -68,6 +69,14 @@
     MPMoviePlayerViewController *mp = [[MPMoviePlayerViewController alloc] initWithContentURL:filePathURL];
     [self presentViewController:mp animated:YES completion:nil];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)tableView:(UITableView *) tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *) indexPath {
+    NSURL *filePathURL = [self.model filePathURLAtIndexPath:indexPath];
+    self.interactionController = [UIDocumentInteractionController interactionControllerWithURL:filePathURL];
+    [self.interactionController presentOpenInMenuFromRect:CGRectMake(0, 0,
+        320,
+        320) inView:self.view animated:YES];
 }
 
 @end

@@ -24,6 +24,8 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIMainStoryboardFile</key>
+	<string>HomeTab</string>
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>HomeTab~ipad</string>
 	<key>UIRequiredDeviceCapabilities</key>

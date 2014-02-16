@@ -36,6 +36,8 @@
 		17B5CD19EF74C9A6F3D9B502 /* DLViewTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB417E1BCA96E3BAB8DC /* DLViewTableViewModel.m */; };
 		17B5CE8398E6C9264DB733D0 /* WebViewIntegrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CAC07CB0A7433998D6C5 /* WebViewIntegrator.m */; };
 		17B5CEFA1E78CE4B2092B543 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CAD48A89F2AD700157EE /* InfoPlist.strings */; };
+		7329342318B179F600FA797C /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7329342218B179F600FA797C /* HomeTab.storyboard */; };
+		7329342518B17A5200FA797C /* DLList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7329342418B17A5200FA797C /* DLList.storyboard */; };
 		73EBA0D818B0DDA200F32B4C /* HomeTab~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EBA0DA18B0DDA200F32B4C /* HomeTab~ipad.storyboard */; };
 		73EBA0DC18B0EEE600F32B4C /* DLList~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EBA0DB18B0EEE600F32B4C /* DLList~ipad.storyboard */; };
 		A32594EB9D4740F28BBC629D /* libPods-DotChairsPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 644537CFEC3B4C5284DAF717 /* libPods-DotChairsPlayer.a */; };
@@ -101,6 +103,8 @@
 		17B5CFAD0ECE879848A8BD7F /* DotChairsPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotChairsPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7B6B7FDD814061883B3A0F /* Pods-DotChairsPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotChairsPlayer.xcconfig"; path = "Pods/Pods-DotChairsPlayer.xcconfig"; sourceTree = "<group>"; };
 		644537CFEC3B4C5284DAF717 /* libPods-DotChairsPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DotChairsPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7329342218B179F600FA797C /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		7329342418B17A5200FA797C /* DLList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DLList.storyboard; sourceTree = "<group>"; };
 		73EBA0D918B0DDA200F32B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/HomeTab~ipad.storyboard"; sourceTree = "<group>"; };
 		73EBA0DB18B0EEE600F32B4C /* DLList~ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "DLList~ipad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +200,8 @@
 				17B5CEA72FE90EA7CE421C27 /* Main~ipad.storyboard */,
 				73EBA0DA18B0DDA200F32B4C /* HomeTab~ipad.storyboard */,
 				73EBA0DB18B0EEE600F32B4C /* DLList~ipad.storyboard */,
+				7329342218B179F600FA797C /* HomeTab.storyboard */,
+				7329342418B17A5200FA797C /* DLList.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7329342518B17A5200FA797C /* DLList.storyboard in Resources */,
 				17B5C47913D9740EA6FE7584 /* InfoPlist.strings in Resources */,
 				17B5C57675D249AB4992B282 /* Images.xcassets in Resources */,
 				17B5C759CF28005C73EF55BF /* readme.md in Resources */,
@@ -435,6 +442,7 @@
 				17B5C6E2016C16981B8CC5CF /* Main~ipad.storyboard in Resources */,
 				73EBA0D818B0DDA200F32B4C /* HomeTab~ipad.storyboard in Resources */,
 				17B5C9900E121C534B1068AB /* dotinstall.js in Resources */,
+				7329342318B179F600FA797C /* HomeTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,4 +51,14 @@
     }
 
 }
+
+- (void)openWithVLCAtIndexPath:(NSIndexPath *) path {
+    NSURL *url = [self filePathURLAtIndexPath:path];
+    NSString *vlc = [NSString stringWithFormat:@"vlc://%@", url.absoluteString];
+    NSURL *url1 = [NSURL URLWithString:vlc];
+    if ([[UIApplication sharedApplication] canOpenURL:url1]) {
+        [[UIApplication sharedApplication] openURL:url1];
+    }
+
+}
 @end

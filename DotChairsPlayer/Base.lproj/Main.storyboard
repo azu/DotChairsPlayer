@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Dot Web Controller-->
+        <!--Dot Web View Controller-->
         <scene sceneID="V4X-Cx-Nfk">
             <objects>
                 <viewController storyboardIdentifier="DotWebViewController" id="S46-mW-075" customClass="DotWebViewController" sceneMemberID="viewController">
@@ -24,7 +24,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aYm-tO-2At"/>
+                    <navigationItem key="navigationItem" id="aYm-tO-2At">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;-" id="2VD-I1-HRw">
+                            <connections>
+                                <action selector="backButtonHandler:" destination="S46-mW-075" id="iQO-oF-CdR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="DL" id="k3e-sa-KD6">
+                            <connections>
+                                <action selector="downloadButtonHandler:" destination="S46-mW-075" id="uhY-oL-IRx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mainWebView" destination="6TW-jq-xpZ" id="4hI-MJ-ojU"/>
                     </connections>
@@ -33,11 +44,13 @@
             </objects>
             <point key="canvasLocation" x="719" y="106"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - DotInstall-->
         <scene sceneID="Hsj-r5-pOx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fbc-dG-RWA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="DotInstall" id="Eed-t0-sSe"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SR9-Ra-PYi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
