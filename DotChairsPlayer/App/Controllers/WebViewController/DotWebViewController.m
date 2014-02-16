@@ -84,15 +84,15 @@
 }
 
 - (void)downloadManagerDidCompleteAllDownloads:(ADBDownloadManager *) manager failedURLs:(NSArray *) failedURLs totalBytes:(NSUInteger) totalBytes {
-    self.title = @"";
+    self.title = @"DotInstall";
 }
 
 - (void)downloadManagerDidStop:(ADBDownloadManager *) manager {
-    self.title = @"";
+    self.title = @"DotInstall";
 }
 
 - (void)downloadManager:(ADBDownloadManager *) manager didDownloadFileAtIndex:(NSUInteger) index1 fromRemoteURL:(NSString *) remoteURL toLocalPath:(NSString *) localPath bytes:(NSUInteger) bytes {
-    self.title = [NSString stringWithFormat:@"Finish %d/%d", index1, [self.model numberOfURLs]];
+    self.title = [NSString stringWithFormat:@"Finish %d/%d", index1 + 1, [self.model numberOfURLs]];
 }
 
 - (void)webView:(UIWebView *) webView responseDotIndexList:(NSArray *) dotIndexList {

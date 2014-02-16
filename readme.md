@@ -6,6 +6,8 @@
 ## Usage
 
 
+![gif](http://gyazo.com/fd02bba6529711b6a8638674f571634.gif)
+
 ## Contributing
 
 1. Fork it!
