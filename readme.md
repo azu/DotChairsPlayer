@@ -6,7 +6,7 @@
 ## Usage
 
 
-![gif](http://gyazo.com/fd02bba6529711b6a8638674f571634.gif)
+![gif](http://gyazo.com/fd02bba6529711b6a8638674f5716345.gif)
 
 ## Contributing
 
