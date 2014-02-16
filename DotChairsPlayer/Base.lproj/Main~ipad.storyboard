@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Cfz-nh-0sW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - WebView-->
+        <scene sceneID="b3B-jV-ckX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cfz-nh-0sW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="WebView" id="5cc-fI-HNC"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VvI-39-bm6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zKM-Py-zmW" kind="relationship" relationship="rootViewController" id="JL0-jX-2hI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hk9-j9-z4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="106"/>
+        </scene>
+        <!--Dot Web View Controller-->
+        <scene sceneID="tci-Tn-wZ9">
+            <objects>
+                <viewController storyboardIdentifier="DotWebViewController" id="zKM-Py-zmW" customClass="DotWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7D1-wp-jq9">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="eYM-lQ-83t">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NUy-i8-ttz">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;-" id="ucI-xP-53u">
+                            <connections>
+                                <action selector="backButtonHandler:" destination="zKM-Py-zmW" id="SMY-YN-DRV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Download" id="9J6-rI-jR6">
+                            <connections>
+                                <action selector="downloadButtonHandler:" destination="zKM-Py-zmW" id="Y9Y-sq-fU5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainWebView" destination="eYM-lQ-83t" id="5Dr-ow-WE1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sOO-on-gYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarItem title="Item" id="W49-fZ-lPw"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="106"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
