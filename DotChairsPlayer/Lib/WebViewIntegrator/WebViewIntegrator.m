@@ -43,7 +43,6 @@
     [self.bridge registerHandler:@"post-video-list" handler:^(id data, WVJBResponseCallback responseCallback) {
         NSArray *videoObject = data;
         NSArray *models = ASTMap(videoObject, ^id(id obj) {
-            NSLog(@"obj = %@", obj);
             return [DotIndexModel modelObjectWithDictionary:obj];
         });
         if ([_webViewDelegate respondsToSelector:@selector(webView:responseDotIndexList:)]) {
