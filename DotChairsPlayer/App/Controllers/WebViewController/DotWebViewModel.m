@@ -26,7 +26,7 @@
 
 - (NSString *)fileNameForIndex:(NSUInteger) index1 {
     DLModel *dlModel = self.downloadList[index1];
-    return dlModel.fileName;
+    return [NSString stringWithFormat:@"%@/%@", dlModel.directoryName, dlModel.fileName];
 }
 
 - (NSString *)_sanitizeFileNameString:(NSString *) fileName {
@@ -40,6 +40,7 @@
         dlModel.fileName = [[self _sanitizeFileNameString:obj.title] stringByAppendingPathExtension:@"mp4"];
         NSDictionary *videos = [HCYoutubeParser h264videosWithYoutubeID:obj.videoID];
         dlModel.fileURL = [videos objectForKey:@"hd720"];
+        dlModel.directoryName = [self _sanitizeFileNameString:obj.lessonTitle];
         return dlModel;
     });
 }

@@ -17,6 +17,7 @@
 		17B5C40D8850081AC53E67C1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C8EAA3EC2D3E292F39EC /* MediaPlayer.framework */; };
 		17B5C429B87681D5F46A4C1E /* iOSDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CF2A505C4944D66C1C62 /* iOSDetector.m */; };
 		17B5C47913D9740EA6FE7584 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CDF0308A6AAB7B12415D /* InfoPlist.strings */; };
+		17B5C4B4AFC5874539155D8A /* dotinstall.js in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C6122E0711D1E0FB0062 /* dotinstall.js */; };
 		17B5C51506F50C2A23900765 /* DotChairsPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC9CF271640D42196DC0 /* DotChairsPlayerTests.m */; };
 		17B5C5402C1FC969CD613A8B /* DotWebViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC3E4604C06028F81F11 /* DotWebViewModel.m */; };
 		17B5C57675D249AB4992B282 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5AC5B401633153070F3 /* Images.xcassets */; };
@@ -27,7 +28,6 @@
 		17B5C7C4C468ABB0183A169B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C007104DEB3614269CD6 /* UIKit.framework */; };
 		17B5C89F1FC11E795D6DD445 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7C86713B7427C486E33 /* AppDelegate.m */; };
 		17B5CA4F32FC14A87EEFCA89 /* DotDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C3E6565E2C8E0A54876F /* DotDownloadManager.m */; };
-		17B5CA53D6B30CDE760D7A03 /* dotinstall.js in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2CAB29804F0F6AB15F9 /* dotinstall.js */; };
 		17B5CAD167DCA4963AFC3791 /* AppUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0166EF957396F54792F /* AppUITabBarController.m */; };
 		17B5CB32863136C98EEC1318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CF0D5663C87F289ACD74 /* Foundation.framework */; };
 		17B5CB95C6496EFFD037F306 /* DotWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C28E7EE6F65FC9C24A33 /* DotWebViewController.m */; };
@@ -63,7 +63,6 @@
 		17B5C08E98EAC4F57A32669A /* DLListViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLListViewTableViewController.m; sourceTree = "<group>"; };
 		17B5C28E7EE6F65FC9C24A33 /* DotWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotWebViewController.m; sourceTree = "<group>"; };
 		17B5C29588EF005F10D25C8E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
-		17B5C2CAB29804F0F6AB15F9 /* dotinstall.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dotinstall.js; sourceTree = "<group>"; };
 		17B5C2EAB558048896252AB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C3075B05A3EA00FCEE81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "DotChairsPlayer/Base.lproj/Main~ipad.storyboard"; sourceTree = SOURCE_ROOT; };
 		17B5C317575D3591F1D8D5F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		17B5C4F8F756688224AB1184 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		17B5C57BA8DB513239799CFF /* DotWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotWebViewController.h; sourceTree = "<group>"; };
 		17B5C5AC5B401633153070F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17B5C6122E0711D1E0FB0062 /* dotinstall.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dotinstall.js; sourceTree = "<group>"; };
 		17B5C6B457811658A6948865 /* DLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLModel.m; sourceTree = "<group>"; };
 		17B5C7AFA49FDFDB8158753C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C7C86713B7427C486E33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,14 +148,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		17B5C18E1E22F8DFA66FAEC0 /* js */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C2CAB29804F0F6AB15F9 /* dotinstall.js */,
-			);
-			path = js;
-			sourceTree = "<group>";
-		};
 		17B5C2745EF18F661C2DD946 /* DotChairsPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +158,7 @@
 				17B5CC6F236FED05FE4B7AC5 /* App */,
 				17B5CE9259DDB4017DE1A39A /* Lib */,
 				17B5C49246C6C7C20B0B509D /* Storyboard */,
-				17B5C18E1E22F8DFA66FAEC0 /* js */,
+				17B5C791CA799645530A44A9 /* JavaScript */,
 			);
 			path = DotChairsPlayer;
 			sourceTree = "<group>";
@@ -238,6 +230,14 @@
 				17B5C4ABA5CEFA0DBACF694E /* AppFactoryAdmin.m */,
 			);
 			path = GodObject;
+			sourceTree = "<group>";
+		};
+		17B5C791CA799645530A44A9 /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C6122E0711D1E0FB0062 /* dotinstall.js */,
+			);
+			path = JavaScript;
 			sourceTree = "<group>";
 		};
 		17B5C7BEC1032C33190A684C /* Products */ = {
@@ -433,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B5C4B4AFC5874539155D8A /* dotinstall.js in Resources */,
 				7329342518B17A5200FA797C /* DLList.storyboard in Resources */,
 				17B5C47913D9740EA6FE7584 /* InfoPlist.strings in Resources */,
 				17B5C57675D249AB4992B282 /* Images.xcassets in Resources */,
@@ -507,7 +508,6 @@
 				17B5C667837CB2F098B42795 /* DLModel.m in Sources */,
 				17B5CE8398E6C9264DB733D0 /* WebViewIntegrator.m in Sources */,
 				17B5C615DC344D6EDA332FA7 /* DotIndexModel.m in Sources */,
-				17B5CA53D6B30CDE760D7A03 /* dotinstall.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

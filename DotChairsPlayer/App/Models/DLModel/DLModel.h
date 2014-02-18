@@ -7,6 +7,7 @@
 
 
 @interface DLModel : NSObject
+@property (nonatomic) NSString *directoryName;
 @property (nonatomic) NSString *fileName;
 @property (nonatomic) NSString *fileURL;
 
