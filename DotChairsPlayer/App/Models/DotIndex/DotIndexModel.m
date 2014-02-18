@@ -1,13 +1,14 @@
 //
 //  DotIndexModel.m
 //
-//  Created by   on 2014/02/16
+//  Created by   on 2014/02/18
 //  Copyright (c) 2014 __MyCompanyName__. All rights reserved.
 //
 
 #import "DotIndexModel.h"
 
 
+NSString *const kDotIndexModelLessonTitle = @"lessonTitle";
 NSString *const kDotIndexModelTitle = @"title";
 NSString *const kDotIndexModelUrl = @"url";
 NSString *const kDotIndexModelVideoID = @"videoID";
@@ -21,6 +22,7 @@ NSString *const kDotIndexModelVideoID = @"videoID";
 
 @implementation DotIndexModel
 
+@synthesize lessonTitle = _lessonTitle;
 @synthesize title = _title;
 @synthesize url = _url;
 @synthesize videoID = _videoID;
@@ -38,6 +40,7 @@ NSString *const kDotIndexModelVideoID = @"videoID";
     // This check serves to make sure that a non-NSDictionary object
     // passed into the model class doesn't break the parsing.
     if(self && [dict isKindOfClass:[NSDictionary class]]) {
+            self.lessonTitle = [self objectOrNilForKey:kDotIndexModelLessonTitle fromDictionary:dict];
             self.title = [self objectOrNilForKey:kDotIndexModelTitle fromDictionary:dict];
             self.url = [self objectOrNilForKey:kDotIndexModelUrl fromDictionary:dict];
             self.videoID = [self objectOrNilForKey:kDotIndexModelVideoID fromDictionary:dict];
@@ -51,6 +54,7 @@ NSString *const kDotIndexModelVideoID = @"videoID";
 - (NSDictionary *)dictionaryRepresentation
 {
     NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
+    [mutableDict setValue:self.lessonTitle forKey:kDotIndexModelLessonTitle];
     [mutableDict setValue:self.title forKey:kDotIndexModelTitle];
     [mutableDict setValue:self.url forKey:kDotIndexModelUrl];
     [mutableDict setValue:self.videoID forKey:kDotIndexModelVideoID];
@@ -77,6 +81,7 @@ NSString *const kDotIndexModelVideoID = @"videoID";
 {
     self = [super init];
 
+    self.lessonTitle = [aDecoder decodeObjectForKey:kDotIndexModelLessonTitle];
     self.title = [aDecoder decodeObjectForKey:kDotIndexModelTitle];
     self.url = [aDecoder decodeObjectForKey:kDotIndexModelUrl];
     self.videoID = [aDecoder decodeObjectForKey:kDotIndexModelVideoID];
@@ -86,6 +91,7 @@ NSString *const kDotIndexModelVideoID = @"videoID";
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
 
+    [aCoder encodeObject:_lessonTitle forKey:kDotIndexModelLessonTitle];
     [aCoder encodeObject:_title forKey:kDotIndexModelTitle];
     [aCoder encodeObject:_url forKey:kDotIndexModelUrl];
     [aCoder encodeObject:_videoID forKey:kDotIndexModelVideoID];
@@ -97,6 +103,7 @@ NSString *const kDotIndexModelVideoID = @"videoID";
     
     if (copy) {
 
+        copy.lessonTitle = [self.lessonTitle copyWithZone:zone];
         copy.title = [self.title copyWithZone:zone];
         copy.url = [self.url copyWithZone:zone];
         copy.videoID = [self.videoID copyWithZone:zone];

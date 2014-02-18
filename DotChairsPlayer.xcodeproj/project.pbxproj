@@ -18,16 +18,16 @@
 		17B5C429B87681D5F46A4C1E /* iOSDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CF2A505C4944D66C1C62 /* iOSDetector.m */; };
 		17B5C47913D9740EA6FE7584 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CDF0308A6AAB7B12415D /* InfoPlist.strings */; };
 		17B5C51506F50C2A23900765 /* DotChairsPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC9CF271640D42196DC0 /* DotChairsPlayerTests.m */; };
-		17B5C529BB01082CF3EED1B5 /* DotIndexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB3A72DD21DCDAD0532E /* DotIndexModel.m */; };
 		17B5C5402C1FC969CD613A8B /* DotWebViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC3E4604C06028F81F11 /* DotWebViewModel.m */; };
 		17B5C57675D249AB4992B282 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5AC5B401633153070F3 /* Images.xcassets */; };
+		17B5C615DC344D6EDA332FA7 /* DotIndexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CE0D4F3258A8CE0933E7 /* DotIndexModel.m */; };
 		17B5C667837CB2F098B42795 /* DLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C6B457811658A6948865 /* DLModel.m */; };
 		17B5C6E2016C16981B8CC5CF /* Main~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CEA72FE90EA7CE421C27 /* Main~ipad.storyboard */; };
 		17B5C759CF28005C73EF55BF /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C29588EF005F10D25C8E /* readme.md */; };
 		17B5C7C4C468ABB0183A169B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C007104DEB3614269CD6 /* UIKit.framework */; };
 		17B5C89F1FC11E795D6DD445 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7C86713B7427C486E33 /* AppDelegate.m */; };
-		17B5C9900E121C534B1068AB /* dotinstall.js in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CC317DDB95A67C0810F6 /* dotinstall.js */; };
 		17B5CA4F32FC14A87EEFCA89 /* DotDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C3E6565E2C8E0A54876F /* DotDownloadManager.m */; };
+		17B5CA53D6B30CDE760D7A03 /* dotinstall.js in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2CAB29804F0F6AB15F9 /* dotinstall.js */; };
 		17B5CAD167DCA4963AFC3791 /* AppUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C0166EF957396F54792F /* AppUITabBarController.m */; };
 		17B5CB32863136C98EEC1318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CF0D5663C87F289ACD74 /* Foundation.framework */; };
 		17B5CB95C6496EFFD037F306 /* DotWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C28E7EE6F65FC9C24A33 /* DotWebViewController.m */; };
@@ -63,6 +63,7 @@
 		17B5C08E98EAC4F57A32669A /* DLListViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLListViewTableViewController.m; sourceTree = "<group>"; };
 		17B5C28E7EE6F65FC9C24A33 /* DotWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotWebViewController.m; sourceTree = "<group>"; };
 		17B5C29588EF005F10D25C8E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
+		17B5C2CAB29804F0F6AB15F9 /* dotinstall.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dotinstall.js; sourceTree = "<group>"; };
 		17B5C2EAB558048896252AB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C3075B05A3EA00FCEE81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "DotChairsPlayer/Base.lproj/Main~ipad.storyboard"; sourceTree = SOURCE_ROOT; };
 		17B5C317575D3591F1D8D5F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		17B5C4F8F756688224AB1184 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		17B5C57BA8DB513239799CFF /* DotWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotWebViewController.h; sourceTree = "<group>"; };
 		17B5C5AC5B401633153070F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		17B5C65D71EEA3E79E3A4DED /* DotIndexModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotIndexModel.h; sourceTree = "<group>"; };
 		17B5C6B457811658A6948865 /* DLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLModel.m; sourceTree = "<group>"; };
 		17B5C7AFA49FDFDB8158753C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C7C86713B7427C486E33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,18 +84,18 @@
 		17B5C8EAA3EC2D3E292F39EC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		17B5C96A6FF8658526B8320D /* AppEntryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEntryFactory.m; sourceTree = "<group>"; };
 		17B5CAC07CB0A7433998D6C5 /* WebViewIntegrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewIntegrator.m; sourceTree = "<group>"; };
-		17B5CB3A72DD21DCDAD0532E /* DotIndexModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotIndexModel.m; sourceTree = "<group>"; };
 		17B5CB417E1BCA96E3BAB8DC /* DLViewTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLViewTableViewModel.m; sourceTree = "<group>"; };
 		17B5CB61DF674E9CAF5B9BE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		17B5CC317DDB95A67C0810F6 /* dotinstall.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dotinstall.js; sourceTree = "<group>"; };
 		17B5CC3E4604C06028F81F11 /* DotWebViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotWebViewModel.m; sourceTree = "<group>"; };
 		17B5CC4DAA2E867F119C2412 /* WebViewIntegrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewIntegrator.h; sourceTree = "<group>"; };
 		17B5CC84493B3CEBE506A695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DotChairsPlayer/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		17B5CC9CF271640D42196DC0 /* DotChairsPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DotChairsPlayerTests.m; sourceTree = "<group>"; };
 		17B5CCBBD4E581B7E6D4637F /* DotChairsPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DotChairsPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		17B5CE0D4F3258A8CE0933E7 /* DotIndexModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotIndexModel.m; sourceTree = "<group>"; };
 		17B5CE28661EB610140C4DB2 /* DLListViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLListViewTableViewController.h; sourceTree = "<group>"; };
 		17B5CE4C40D37B6D02AD0E77 /* DLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLModel.h; sourceTree = "<group>"; };
 		17B5CE65FCDB0203A8BDCD57 /* DotDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotDownloadManager.h; sourceTree = "<group>"; };
+		17B5CED5EE3C7BE50385011C /* DotIndexModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotIndexModel.h; sourceTree = "<group>"; };
 		17B5CF0C93AC943B733422AF /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5CF0D5663C87F289ACD74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5CF2A505C4944D66C1C62 /* iOSDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSDetector.m; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		17B5C18E1E22F8DFA66FAEC0 /* js */ = {
 			isa = PBXGroup;
 			children = (
-				17B5CC317DDB95A67C0810F6 /* dotinstall.js */,
+				17B5C2CAB29804F0F6AB15F9 /* dotinstall.js */,
 			);
 			path = js;
 			sourceTree = "<group>";
@@ -219,6 +219,15 @@
 			path = WebViewController;
 			sourceTree = "<group>";
 		};
+		17B5C53308E0CFF325734B0F /* DotIndex */ = {
+			isa = PBXGroup;
+			children = (
+				17B5CE0D4F3258A8CE0933E7 /* DotIndexModel.m */,
+				17B5CED5EE3C7BE50385011C /* DotIndexModel.h */,
+			);
+			path = DotIndex;
+			sourceTree = "<group>";
+		};
 		17B5C710C09A39A8F06693EE /* GodObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				17B5CA87942C7C53F378B760 /* DLModel */,
-				17B5CE79A27AA4ABBDC3C565 /* DotIndexModel */,
+				17B5C53308E0CFF325734B0F /* DotIndex */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,15 +323,6 @@
 				17B5CB3481D97C08B6F5BAC6 /* AppUITabBarController */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		17B5CE79A27AA4ABBDC3C565 /* DotIndexModel */ = {
-			isa = PBXGroup;
-			children = (
-				17B5C65D71EEA3E79E3A4DED /* DotIndexModel.h */,
-				17B5CB3A72DD21DCDAD0532E /* DotIndexModel.m */,
-			);
-			path = DotIndexModel;
 			sourceTree = "<group>";
 		};
 		17B5CE9259DDB4017DE1A39A /* Lib */ = {
@@ -441,7 +441,6 @@
 				17B5C0091CE357247EF65BC3 /* Main.storyboard in Resources */,
 				17B5C6E2016C16981B8CC5CF /* Main~ipad.storyboard in Resources */,
 				73EBA0D818B0DDA200F32B4C /* HomeTab~ipad.storyboard in Resources */,
-				17B5C9900E121C534B1068AB /* dotinstall.js in Resources */,
 				7329342318B179F600FA797C /* HomeTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,7 +506,8 @@
 				17B5C5402C1FC969CD613A8B /* DotWebViewModel.m in Sources */,
 				17B5C667837CB2F098B42795 /* DLModel.m in Sources */,
 				17B5CE8398E6C9264DB733D0 /* WebViewIntegrator.m in Sources */,
-				17B5C529BB01082CF3EED1B5 /* DotIndexModel.m in Sources */,
+				17B5C615DC344D6EDA332FA7 /* DotIndexModel.m in Sources */,
+				17B5CA53D6B30CDE760D7A03 /* dotinstall.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
