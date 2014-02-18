@@ -5,6 +5,7 @@ target "DotChairsPlayer" do
   pod 'ADBDownloadManager',:git => "https://github.com/azu/ADBDownloadManager.git"
   pod 'Asterism'
   pod 'WebViewJavascriptBridge'
+  pod 'StoryboardInitializer'
 end
 
 target "DotChairsPlayerTests" do

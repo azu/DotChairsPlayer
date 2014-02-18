@@ -3,47 +3,49 @@
 //
 
 
-#import <Asterism/ASTMap.h>
 #import "DLViewTableViewModel.h"
 
 
 @interface DLViewTableViewModel ()
-@property(nonatomic, strong) NSArray *fileArray;
+@property(nonatomic, strong) NSArray *fileList;
+@property(nonatomic, strong, readwrite) NSURL *currentDirectory;
 @end
 
 @implementation DLViewTableViewModel {
 
 }
+- (void)reloadDataAtDirectoryURL:(NSURL *) url {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    self.currentDirectory = url;
+    self.fileList = [fileManager contentsOfDirectoryAtPath:[self.currentDirectory path] error:nil];
 
+}
 
 - (void)reloadData {
-
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *document = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    NSArray *fileList = [fileManager contentsOfDirectoryAtPath:[document path] error:nil];
-    self.fileArray = ASTMap(fileList, ^id(NSString *obj) {
-        return [document URLByAppendingPathComponent:obj];
-    });
-
+    if (self.currentDirectory == nil) {
+        self.currentDirectory = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    }
+    self.fileList = [fileManager contentsOfDirectoryAtPath:[self.currentDirectory path] error:nil];
 }
 
 - (NSInteger)numberOfData {
-    return [self.fileArray count];
+    return [self.fileList count];
 }
 
 - (NSString *)fileNameAtIndexPath:(NSIndexPath *) path {
-    NSURL *fileURL = self.fileArray[(NSUInteger)path.row];
+    NSURL *fileURL = [self filePathURLAtIndexPath:path];
     return [fileURL lastPathComponent];
 }
 
 - (NSURL *)filePathURLAtIndexPath:(NSIndexPath *) path {
-    return self.fileArray[(NSUInteger)path.row];
+    return [self.currentDirectory URLByAppendingPathComponent:self.fileList[(NSUInteger)path.row]];
 }
 
 - (void)deleteFileAtIndexPath:(NSIndexPath *) path {
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *fileURL = self.fileArray[(NSUInteger)path.row];
+    NSURL *fileURL = [self filePathURLAtIndexPath:path];
     NSError *error = nil;
     [fileManager removeItemAtURL:fileURL error:&error];
     if (error) {
@@ -61,4 +63,14 @@
     }
 
 }
+
+- (BOOL)fileIsDirectoryAtIndexPath:(NSIndexPath *) path {
+    NSURL *url = [self filePathURLAtIndexPath:path];
+    BOOL isDirectory = NO;
+    [[NSFileManager defaultManager] fileExistsAtPath:[url path]
+                                    isDirectory:&isDirectory];
+    return isDirectory;
+}
+
+
 @end

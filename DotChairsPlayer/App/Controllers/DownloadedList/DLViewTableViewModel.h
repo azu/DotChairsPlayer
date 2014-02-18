@@ -5,6 +5,8 @@
 
 
 @interface DLViewTableViewModel : NSObject
+@property(nonatomic, strong, readonly) NSURL *currentDirectory;
+
 - (void)reloadData;
 
 - (NSInteger)numberOfData;
@@ -16,4 +18,8 @@
 - (void)deleteFileAtIndexPath:(NSIndexPath *) path;
 
 - (void)openWithVLCAtIndexPath:(NSIndexPath *) path;
+
+- (BOOL)fileIsDirectoryAtIndexPath:(NSIndexPath *) path;
+
+- (void)reloadDataAtDirectoryURL:(NSURL *) url;
 @end

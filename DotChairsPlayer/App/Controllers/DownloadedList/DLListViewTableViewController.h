@@ -8,4 +8,5 @@
 
 @interface DLListViewTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
+- (void)setCurrentDirectoryURL:(NSURL *) url;
 @end

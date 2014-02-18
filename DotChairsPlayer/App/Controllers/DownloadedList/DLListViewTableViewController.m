@@ -6,6 +6,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "DLListViewTableViewController.h"
 #import "DLViewTableViewModel.h"
+#import "UIStoryboard+StoryboardInitializer.h"
 
 
 @interface DLListViewTableViewController ()
@@ -29,6 +30,7 @@
 - (void)viewWillAppear:(BOOL) animated {
     [super viewWillAppear:animated];
     [self updateTable];
+    self.title = [[self.model currentDirectory] lastPathComponent];
 }
 
 - (void)updateTable {
@@ -65,10 +67,20 @@
 }
 
 - (void)tableView:(UITableView *) tableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
-    NSURL *filePathURL = [self.model filePathURLAtIndexPath:indexPath];
-    MPMoviePlayerViewController *mp = [[MPMoviePlayerViewController alloc] initWithContentURL:filePathURL];
-    [self presentViewController:mp animated:YES completion:nil];
+    if ([self.model fileIsDirectoryAtIndexPath:indexPath]) {
+        DLListViewTableViewController *dlListViewTableViewController = [self.storyboard instanceWithClass:[self class]];
+        [dlListViewTableViewController setCurrentDirectoryURL:[self.model filePathURLAtIndexPath:indexPath]];
+        [self.navigationController pushViewController:dlListViewTableViewController animated:YES];
+    } else {
+        NSURL *filePathURL = [self.model filePathURLAtIndexPath:indexPath];
+        MPMoviePlayerViewController *mp = [[MPMoviePlayerViewController alloc] initWithContentURL:filePathURL];
+        [self presentViewController:mp animated:YES completion:nil];
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)setCurrentDirectoryURL:(NSURL *) url {
+    [self.model reloadDataAtDirectoryURL:url];
 }
 
 - (void)tableView:(UITableView *) tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *) indexPath {
