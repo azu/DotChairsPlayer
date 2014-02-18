@@ -81,9 +81,12 @@
 }
 
 - (void)downloadManager:(ADBDownloadManager *) manager didFailFileAtIndex:(NSUInteger) index1 fromRemoteURL:(NSString *) remoteURL toLocalPath:(NSString *) localPath error:(NSError *) error {
+    NSLog(@"remoteURL = %@", remoteURL);
+    NSLog(@"error = %@", error);
 }
 
 - (void)downloadManagerDidCompleteAllDownloads:(ADBDownloadManager *) manager failedURLs:(NSArray *) failedURLs totalBytes:(NSUInteger) totalBytes {
+    NSLog(@"failedURLs = %@", failedURLs);
     self.title = @"DotInstall";
 }
 
@@ -91,7 +94,7 @@
     self.title = @"DotInstall";
 }
 
-- (void)downloadManager:(ADBDownloadManager *) manager didDownloadFileAtIndex:(NSUInteger) index1 fromRemoteURL:(NSString *) remoteURL toLocalPath:(NSString *) localPath bytes:(NSUInteger) bytes {
+- (void)downloadManager:(ADBDownloadManager *) manager didDownloadFileAtIndex:(NSUInteger) index1 fromRemoteURL:(NSString *) remoteURL toLocalPath:(NSString *) localPath data:(NSData *) data bytes:(NSUInteger) bytes {
     self.title = [NSString stringWithFormat:@"Finish %d/%d", index1 + 1, [self.model numberOfURLs]];
 }
 

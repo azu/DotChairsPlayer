@@ -39,8 +39,7 @@
         DLModel *dlModel = [[DLModel alloc] init];
         dlModel.fileName = [[self _sanitizeFileNameString:obj.title] stringByAppendingPathExtension:@"mp4"];
         NSDictionary *videos = [HCYoutubeParser h264videosWithYoutubeID:obj.videoID];
-        NSLog(@"videos = %@", videos);
-        dlModel.fileURL = [videos objectForKey:@"medium"];
+        dlModel.fileURL = [videos objectForKey:@"hd720"];
         return dlModel;
     });
 }

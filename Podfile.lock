@@ -1,14 +1,18 @@
 PODS:
-  - ADBDownloadManager (HEAD based on 1.3.0)
+  - ADBDownloadManager (1.3.0)
   - Asterism (0.0.6)
-  - HCYoutubeParser (0.0.1)
+  - HCYoutubeParser (HEAD based on 0.0.1)
   - WebViewJavascriptBridge (4.1.0)
 
 DEPENDENCIES:
-  - ADBDownloadManager (HEAD)
+  - ADBDownloadManager (from `https://github.com/azu/ADBDownloadManager.git`)
   - Asterism
-  - HCYoutubeParser
+  - HCYoutubeParser (HEAD)
   - WebViewJavascriptBridge
+
+EXTERNAL SOURCES:
+  ADBDownloadManager:
+    :git: https://github.com/azu/ADBDownloadManager.git
 
 SPEC CHECKSUMS:
   ADBDownloadManager: cf505211dbb39b2aed66b41d6222c0e0c86ddf31
@@ -16,4 +20,4 @@ SPEC CHECKSUMS:
   HCYoutubeParser: b5e88f679f613c1bbe58df3e173f46be38dcfbc0
   WebViewJavascriptBridge: eb504e9485f5b7f3fa036b6f0d748cfccb2aa18b
 
-COCOAPODS: 0.28.0
+COCOAPODS: 0.29.0
