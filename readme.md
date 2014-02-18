@@ -5,8 +5,16 @@
 
 ## Usage
 
-
 ![gif](http://gyazo.com/fd02bba6529711b6a8638674f5716345.gif)
+
+## Installation
+
+``` sh
+git clone
+pod install
+open DotChairsPlayer.workspace
+# Build iPad.app
+```
 
 ## Contributing
 
